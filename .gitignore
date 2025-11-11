@@ -1,24 +1,63 @@
-# Logs
-logs
-*.log
+# --------------------------
+# Node.js / Backend
+# --------------------------
+node_modules/
+.env
+.env.local
+.env.*.local
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+logs/
+*.log
 
-node_modules
-dist
-dist-ssr
-*.local
+# Build outputs
+dist/
+build/
+tmp/
+coverage/
+.cache/
 
-# Editor directories and files
+# --------------------------
+# Frontend (React / Vite)
+# --------------------------
+Frontend/node_modules/
+Frontend/dist/
+Frontend/.env
+Frontend/.env.local
+Frontend/.env.*.local
+Frontend/.vite/
+Frontend/.DS_Store
+
+# --------------------------
+# Backend
+# --------------------------
+Backend/node_modules/
+Backend/.env
+Backend/.env.local
+Backend/.env.*.local
+Backend/.DS_Store
+
+# --------------------------
+# Editor / OS / Misc
+# --------------------------
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+.DS_Store
+Thumbs.db
+
+# --------------------------
+# Others
+# --------------------------
+*.local
+*.pid
+*.seed
+*.log
